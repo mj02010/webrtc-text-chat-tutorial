@@ -19,7 +19,7 @@ if (!location.hash) {
 const chatHash = location.hash.substring(1);
 
 // TODO: Replace with your own channel ID
-const drone = new ScaleDrone('yiS12Ts5RdNhebyM');
+const drone = new ScaleDrone('y4gjGiO4eW2PcEnQ');
 // Scaledrone room name needs to be prefixed with 'observable-'
 const roomName = 'observable-' + chatHash;
 // Scaledrone room used for signaling
@@ -140,9 +140,9 @@ function setupDataChannel() {
 }
 
 function checkDataChannelState() {
-  console.log('WebRTC channel state is:', dataChannel.readyState);
+  console.log('Aahil channel state is:', dataChannel.readyState);
   if (dataChannel.readyState === 'open') {
-    insertMessageToDOM({content: 'WebRTC data channel is now open'});
+    insertMessageToDOM({content: 'As some one has landed you can now chat'});
   }
 }
 
